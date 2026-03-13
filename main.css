@@ -1,0 +1,62 @@
+:root {
+    --primary: #2563eb;
+    --bg: #f8fafc;
+    --card: #ffffff;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background: var(--bg);
+    padding: 110px 20px 20px;
+    margin: 0;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    background: var(--card);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid #e2e8f0;
+}
+
+.card:active {
+    transform: scale(0.95);
+    background: #eff6ff;
+}
+
+.card i {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#status-bar {
+    background: #1e293b;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    min-height: 40px;
+    position: fixed;
+
+    top: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+.battery-low {
+    color: #ef4444;
+}
